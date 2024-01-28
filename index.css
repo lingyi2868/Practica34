@@ -337,3 +337,39 @@ footer .final_info {
     }
 }
 
+
+/*Comienzo de Animacion*/
+
+/*Fin de animacion*/
+
+/*Comienzo de Anuncios*/
+.anuncios{
+    height:100%;
+    display: flex; 
+}
+
+.anuncios>div{
+    flex: 1;
+}
+
+.anuncios .videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*comienzo de video*/
+video{
+    width: 50%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/*FIn de anuncios*/
+
+.anuncios .tienda{
+    text-align: center;
+    background-image: url("./pepsi.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
