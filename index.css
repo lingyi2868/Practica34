@@ -1,28 +1,29 @@
 /*Configuracion inicial*/
-*{
+* {
     padding: 0;
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
-    color: rgb(233,224,221);
+    color: rgb(233, 224, 221);
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
 }
+
 /*Fin de configuracion inicial*/
 
 
 /*comienzo de header*/
-header{
+header {
     background-color: rgb(102, 84, 66);
     height: 10%;
     display: flex;
@@ -30,18 +31,18 @@ header{
 }
 
 /*encabezado*/
-header .encabezado{
+header .encabezado {
     padding: 1rem;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
-.encabezado h1{
-    color: rgb(255, 249, 249); 
+.encabezado h1 {
+    color: rgb(255, 249, 249);
 }
 
-.encabezado a{
-    color:rgb(203,196,182);
+.encabezado a {
+    color: rgb(203, 196, 182);
     align-self: flex-end;
     font-size: 1.3rem;
 }
@@ -57,31 +58,31 @@ header .barra_nav {
 /*Fin de header*/
 
 /*CSS para lateral*/
-.container{
+.container {
     display: flex;
     flex-direction: row;
 }
 
 
 /*Parte lateral*/
-#lateral{
+#lateral {
     text-align: center;
     width: 20%;
-    background-color: rgb(194,167,140);
-    color: rgb(233,224,221);
+    background-color: rgb(194, 167, 140);
+    color: rgb(233, 224, 221);
     font-size: 1.1rem;
 }
 
-#lateral .tema{
+#lateral .tema {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
 }
 
-#lateral .tema:not(:first-child)::before{
+#lateral .tema:not(:first-child)::before {
     content: "> ";
 }
 
-#lateral .tema li:first-child{
+#lateral .tema li:first-child {
     margin-top: 10px;
 }
 
@@ -89,29 +90,28 @@ header .barra_nav {
 
 
 /*comienzo de principal*/
-main{
+main {
     display: flex;
     flex-direction: column;
 }
 
 
 /*Parte superior*/
-.contenedor1{
+.contenedor1 {
     height: 50%;
     width: auto;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.contenedor1 > .imagen1{
+.contenedor1>.imagen1 {
     width: 85.85%;
     height: 82.96%;
     background-image: url("imagen1.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height: 250px;
     display: flex;
     flex: column;
     align-items: center;
@@ -121,45 +121,45 @@ main{
     font-weight: bold;
 }
 
-.imagen1 h2{
+.imagen1 h2 {
     color: rgb(164, 111, 57);
     text-align: center;
 }
 
-.imagen1 p{
+.imagen1 p {
     margin: 25px 50px;
     color: black;
     font-style: italic;
 }
 
-.contenedor1 > .separador{
+.contenedor1>.separador {
     position: absolute;
     bottom: 0;
     width: 95%;
     height: 0.2rem;
-    background-color:rgb(115, 115, 115);
+    background-color: rgb(115, 115, 115);
 }
 
 /*Fin de parte superior*/
 
 /*inicio de parte inferior*/
 
-.contenedor2{
+.contenedor2 {
     height: 100%;
     width: 100%;
 }
 
-.contenedor2 > h1{
+.contenedor2>h1 {
     text-align: center;
     font-size: 1.8em;
 }
 
-.contenedor2 > .inferior{
-    display:flex;
+.contenedor2>.inferior {
+    display: flex;
     justify-content: space-evenly;
 }
 
-.inferior > .fondo{
+.inferior>.fondo {
     background-color: rgb(219, 217, 217);
     padding: 0.5rem;
     width: 20%;
@@ -168,19 +168,19 @@ main{
     text-align: center;
 }
 
-.fondo img{
+.fondo img {
     width: 6.25rem;
     height: 6.25rem;
     align-self: center;
 }
 
-.fondo p{
+.fondo p {
     font-size: 0.8rem;
 }
 
-.fondo .gris{
+.fondo .gris {
     width: 50%;
-    background-color: rgb(35,34,34);
+    background-color: rgb(35, 34, 34);
     align-self: center;
     margin-top: auto;
 }
@@ -188,25 +188,25 @@ main{
 /*find de parte inferior*/
 
 /*Parte de formularios*/
-section{
+section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 400px;
 }
 
-section > form {
+section>form {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section > form p{
+section>form p {
     width: 70%;
 }
 
-section > form >*{
+section>form>* {
     padding-bottom: 20px;
 }
 
@@ -219,17 +219,18 @@ section #barra {
     margin-right: 10px;
 }
 
-input{
+input {
     background-color: rgb(214, 217, 217);
 }
 
 
-form button{
+form button {
     color: white;
     width: 50%;
     height: auto;
-    background-color: rgb(194,167,140);
+    background-color: rgb(194, 167, 140);
 }
+
 /*fin de formulario*/
 
 /*Comienzo de footer*/
@@ -239,8 +240,8 @@ footer {
     padding-top: 1rem;
     display: flex;
     background-color: rgb(102, 84, 66);
-    color:white;
-    text-align:center;
+    color: white;
+    text-align: center;
 }
 
 footer ul {
@@ -248,44 +249,44 @@ footer ul {
 
 }
 
-footer .final_info{
+footer .final_info {
     flex: 1;
 }
 
-footer .barra_nav{
+footer .barra_nav {
     display: flex;
     flex-direction: column;
 }
 
-.barra_nav li{
+.barra_nav li {
     margin-bottom: 0.5rem;
 }
 
-.barra_nav li:first-child{
+.barra_nav li:first-child {
     text-decoration: underline;
     text-decoration-color: whitesmoke;
 }
 
 
-footer .cursos{
+footer .cursos {
     display: flex;
     flex-direction: column;
 }
 
-.curso > li{
+.curso>li {
     margin-bottom: 0.5rem;
-} 
+}
 
-.curso .tema:not(:first-child)::before{
+.curso .tema:not(:first-child)::before {
     content: "> ";
 }
 
-.cursos.tema{
+.cursos.tema {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
 }
 
-.cursos .tema li:first-child{
+.cursos .tema li:first-child {
     margin-top: 10px;
 }
 
@@ -293,31 +294,32 @@ footer .final_info {
     flex: 1;
 }
 
-.final_info > *{
+.final_info>* {
     margin-bottom: 1.5rem;
 }
 
-.info li{
+.info li {
     margin-bottom: 0.5rem;
 }
 
-.icono{
+.icono {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.icono li{
+.icono li {
     font-size: 2rem;
 }
 
 /*media query*/
 
-@media screen and (min-width: 320px) and (max-width: 426px) {
+@media screen and (min-width: 320px) and (max-width: 769px) {
     #lateral {
-        display: none; 
+        display: none;
     }
-    body{
+
+    body {
         width: 100%;
     }
 
@@ -325,16 +327,25 @@ footer .final_info {
         font-size: 0.7em;
     }
 
-    .contenedor1 > .imagen1 {
+    .contenedor1>.imagen1 {
         width: 426px;
-        min-height:auto;
+        min-height: auto;
         background-image: url("imagenCambiado.png");
         background-size: contain;
     }
 
     header {
-        background-color: rgb(219, 219, 18);
+        background-color: rgb(8, 0, 0);
     }
+
+    .fondo:last-child {
+        display: none;
+    }
+
+    .contenedor1 {
+        text-align: left;
+    }
+
 }
 
 
@@ -342,34 +353,65 @@ footer .final_info {
 
 /*Fin de animacion*/
 
-/*Comienzo de Anuncios*/
-.anuncios{
-    height:100%;
-    display: flex; 
-}
-
-.anuncios>div{
-    flex: 1;
-}
-
-.anuncios .videos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 /*comienzo de video*/
-video{
-    width: 50%;
-    height: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-/*FIn de anuncios*/
-
-.anuncios .tienda{
-    text-align: center;
-    background-image: url("./pepsi.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+.videos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1em;
 }
 
+video {
+    max-width: 300px;
+    max-height: 300px;
+    align-self: center;
+}
+
+iframe {
+    max-width: 300px;
+    max-height: 300px;
+    align-self: center;
+}
+
+/*fin de video*/
+
+@keyframes cambiarColor {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    75% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.fondo {
+    width: 100px;
+    height: 100px;
+    animation: cambiarColor 5s infinite;
+}
+
+/*transaccion*/
+.icono li a {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icono li a:hover {
+    transform: scale(1.2);
+    color: blue;
+}
+
+/*Musica de fondo*/
