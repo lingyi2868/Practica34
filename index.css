@@ -1,0 +1,339 @@
+/*Configuracion inicial*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(233,224,221);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+/*Fin de configuracion inicial*/
+
+
+/*comienzo de header*/
+header{
+    background-color: rgb(102, 84, 66);
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*encabezado*/
+header .encabezado{
+    padding: 1rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+.encabezado h1{
+    color: rgb(255, 249, 249); 
+}
+
+.encabezado a{
+    color:rgb(203,196,182);
+    align-self: flex-end;
+    font-size: 1.3rem;
+}
+
+
+/*barra de navegador*/
+header .barra_nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+}
+
+/*Fin de header*/
+
+/*CSS para lateral*/
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*Parte lateral*/
+#lateral{
+    text-align: center;
+    width: 20%;
+    background-color: rgb(194,167,140);
+    color: rgb(233,224,221);
+    font-size: 1.1rem;
+}
+
+#lateral .tema{
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+#lateral .tema:not(:first-child)::before{
+    content: "> ";
+}
+
+#lateral .tema li:first-child{
+    margin-top: 10px;
+}
+
+/*terminar lateral*/
+
+
+/*comienzo de principal*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Parte superior*/
+.contenedor1{
+    height: 50%;
+    width: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contenedor1 > .imagen1{
+    width: 85.85%;
+    height: 82.96%;
+    background-image: url("imagen1.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    display: flex;
+    flex: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.imagen1 h2{
+    color: rgb(164, 111, 57);
+    text-align: center;
+}
+
+.imagen1 p{
+    margin: 25px 50px;
+    color: black;
+    font-style: italic;
+}
+
+.contenedor1 > .separador{
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 0.2rem;
+    background-color:rgb(115, 115, 115);
+}
+
+/*Fin de parte superior*/
+
+/*inicio de parte inferior*/
+
+.contenedor2{
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor2 > h1{
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.contenedor2 > .inferior{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.inferior > .fondo{
+    background-color: rgb(219, 217, 217);
+    padding: 0.5rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fondo img{
+    width: 6.25rem;
+    height: 6.25rem;
+    align-self: center;
+}
+
+.fondo p{
+    font-size: 0.8rem;
+}
+
+.fondo .gris{
+    width: 50%;
+    background-color: rgb(35,34,34);
+    align-self: center;
+    margin-top: auto;
+}
+
+/*find de parte inferior*/
+
+/*Parte de formularios*/
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+}
+
+section > form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > form p{
+    width: 70%;
+}
+
+section > form >*{
+    padding-bottom: 20px;
+}
+
+
+section #barra {
+    width: 2px;
+    height: 90%;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input{
+    background-color: rgb(214, 217, 217);
+}
+
+
+form button{
+    color: white;
+    width: 50%;
+    height: auto;
+    background-color: rgb(194,167,140);
+}
+/*fin de formulario*/
+
+/*Comienzo de footer*/
+
+
+footer {
+    padding-top: 1rem;
+    display: flex;
+    background-color: rgb(102, 84, 66);
+    color:white;
+    text-align:center;
+}
+
+footer ul {
+    flex: 1;
+
+}
+
+footer .final_info{
+    flex: 1;
+}
+
+footer .barra_nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.barra_nav li{
+    margin-bottom: 0.5rem;
+}
+
+.barra_nav li:first-child{
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+}
+
+
+footer .cursos{
+    display: flex;
+    flex-direction: column;
+}
+
+.curso > li{
+    margin-bottom: 0.5rem;
+} 
+
+.curso .tema:not(:first-child)::before{
+    content: "> ";
+}
+
+.cursos.tema{
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.cursos .tema li:first-child{
+    margin-top: 10px;
+}
+
+footer .final_info {
+    flex: 1;
+}
+
+.final_info > *{
+    margin-bottom: 1.5rem;
+}
+
+.info li{
+    margin-bottom: 0.5rem;
+}
+
+.icono{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icono li{
+    font-size: 2rem;
+}
+
+/*media query*/
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    #lateral {
+        display: none; 
+    }
+    body{
+        width: 100%;
+    }
+
+    * {
+        font-size: 0.7em;
+    }
+
+    .contenedor1 > .imagen1 {
+        width: 426px;
+        min-height:auto;
+        background-image: url("imagenCambiado.png");
+        background-size: contain;
+    }
+
+    header {
+        background-color: rgb(219, 219, 18);
+    }
+}
+
